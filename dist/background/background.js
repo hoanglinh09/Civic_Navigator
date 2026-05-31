@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((e,o,t)=>{if((e==null?void 0:e.type)==="capture_screenshot")return chrome.tabs.captureVisibleTab(chrome.windows.WINDOW_ID_CURRENT,{format:"png"},r=>{if(!r){t({ok:!1});return}const i=r.indexOf(","),n=i===-1?"":r.slice(i+1);t({ok:!0,data:n,width:0,height:0})}),!0});
