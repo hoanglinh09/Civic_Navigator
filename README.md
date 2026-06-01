@@ -1,7 +1,5 @@
 # civic_navigator_dvcqg
 
-Basic implementation per `PROJECT_REQUIREMENTS.md`.
-
 ## What’s included
 
 - FastAPI backend: `GET /health`, `WS /ws/{session_id}` with conversation-first agent loop, memory context, UI sync gate, screenshot + highlight tool hooks.
